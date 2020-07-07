@@ -14,13 +14,13 @@ export default {
   context: source,
   resolve: {
     modules: ['node_modules', source],
-    extensions: ['.ts'],
+    extensions: ['.ts', '.js'],
   },
   entry: './index.ts',
   output: {
     path: output,
-    filename: `dist/use-share${isDev ? '.js' : '.min.js'}`,
-    library: 'useShare',
+    filename: `dist/use-social${isDev ? '.js' : '.min.js'}`,
+    library: 'useSocial',
     libraryTarget: 'umd',
     umdNamedDefine: true,
   },

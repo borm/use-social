@@ -1,5 +1,6 @@
 {
-  "name": "use-share",
+  "name": "use-social",
+  "npmName": "use-social",
   "version": "0.0.1",
   "description": "",
   "main": "./lib/index.js",
@@ -16,7 +17,14 @@
     "build:umd:min": "NODE_ENV=production webpack",
     "prepublish": "npm run build"
   },
-  "author": "",
+  "author": "borm",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/borm/use-social.git"
+  },
+  "bugs": {
+    "url": "https://github.com/borm/use-social/issues"
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.10.4",
