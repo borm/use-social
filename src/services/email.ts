@@ -1,4 +1,4 @@
-import stringify from 'utils/stringify';
+import stringify from '../utils/stringify';
 
 type Options = {
   body?: string;

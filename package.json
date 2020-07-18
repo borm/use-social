@@ -1,7 +1,7 @@
 {
   "name": "use-social",
   "npmName": "use-social",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "",
   "main": "./lib/index.js",
   "files": [
@@ -15,7 +15,8 @@
     "build:ts": "tsc -d -m commonjs --outDir ./lib --sourceMap false",
     "build:umd": "NODE_ENV=development webpack",
     "build:umd:min": "NODE_ENV=production webpack",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "pub": "npm publish"
   },
   "author": "borm",
   "repository": {
