@@ -1,5 +1,5 @@
-import stringify from '../utils/stringify';
-import share from '../share';
+import stringify from 'utils/stringify';
+import share from 'share';
 
 type Options = {
   title?: string;
