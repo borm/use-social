@@ -7,16 +7,15 @@ type Options = {
   hashtag?: string;
 };
 
-export function link(url: string, { quote, hashtag }: Options) {
+export function link(url: string, options: Options = {}) {
   assert(url, 'facebook.url');
   return `https://www.facebook.com/sharer/sharer.php${stringify({
     u: url,
-    quote,
-    hashtag,
+    ...options,
   })}`;
 }
 
-export default function facebook(url: string, options: Options) {
+export default function facebook(url: string, options?: Options) {
   share(link(url, options), {
     width: 550,
     height: 400,
